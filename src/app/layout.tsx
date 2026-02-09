@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Resolute Ventures Winterfest 2026 | Alta & Snowbird",
   description:
     "Resolute Ventures Winterfest — Alta & Snowbird, March 9–12, 2026. Transportation, lift tickets, rentals, lessons, and tips for founders.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
