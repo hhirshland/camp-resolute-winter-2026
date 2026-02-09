@@ -24,10 +24,12 @@ export default function RootLayout({
         {/* Header — matches resolute.vc dark blue header */}
         <header className="fixed top-0 left-0 right-0 z-50 bg-dark-blue text-tan">
           <div className="mx-auto flex h-[60px] max-w-[var(--max-width)] items-center justify-between px-[27px] md:px-[40px] lg:px-[67px]">
-            <a href="#top" className="pb-[1px]">
-              <span className="text-tan text-[16px] font-bold tracking-tight">
-                Resolute Ventures
-              </span>
+            <a href="#top" className="block">
+              <img
+                src="/Logo.svg"
+                alt="Resolute Ventures"
+                className="h-[28px] w-auto rounded-none"
+              />
             </a>
             <nav className="hidden md:flex items-center gap-x-[32px]">
               {[
@@ -63,9 +65,13 @@ export default function RootLayout({
                   href="https://www.resolute.vc/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-tan text-[16px] font-bold tracking-tight pb-[1px]"
+                  className="block"
                 >
-                  Resolute Ventures
+                  <img
+                    src="/Logo.svg"
+                    alt="Resolute Ventures"
+                    className="h-[28px] w-auto rounded-none"
+                  />
                 </a>
                 <ul className="hidden md:flex gap-x-[32px]">
                   <li>

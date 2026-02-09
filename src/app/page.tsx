@@ -284,24 +284,30 @@ export default function Home() {
   return (
     <div id="top" className="bg-tan">
       {/* Hero */}
-      <div className="mx-auto max-w-[var(--max-width)] px-[27px] md:px-[40px] lg:px-[67px] pt-[64px] md:pt-[96px] pb-[48px] md:pb-[64px]">
-        <h2 className="text-[24px] md:text-[36px] xl:text-[56px] leading-[30px] md:leading-[40px] xl:leading-[64px]">
-          Winterfest 2026
-        </h2>
-        <p className="mt-[16px] text-[16px] md:text-[24px] leading-[22px] md:leading-[32px] font-light text-dark-blue">
-          Alta &amp; Snowbird&ensp;·&ensp;March 9–12, 2026
-        </p>
-        <p className="mt-[16px] text-[16px] md:text-[24px] leading-[22px] md:leading-[32px] font-light text-dark-blue">
-          Four days of skiing, networking, and founder community at the Alta
-          Peruvian Lodge.
-        </p>
-        <div className="mt-[32px] flex flex-wrap gap-[16px]">
-          <a href="#agenda" className="resolute-btn">
-            View Agenda
-          </a>
-          <a href="#attendees" className="resolute-btn-outlined">
-            See Attendees
-          </a>
+      <div
+        className="relative bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/winterfest-hero.png')" }}
+      >
+        <div className="absolute inset-0 bg-dark-blue/60" />
+        <div className="relative mx-auto max-w-[var(--max-width)] px-[27px] md:px-[40px] lg:px-[67px] pt-[80px] md:pt-[120px] pb-[64px] md:pb-[80px]">
+          <h2 className="text-[24px] md:text-[36px] xl:text-[56px] leading-[30px] md:leading-[40px] xl:leading-[64px] !text-tan">
+            Winterfest 2026
+          </h2>
+          <p className="mt-[16px] text-[16px] md:text-[24px] leading-[22px] md:leading-[32px] font-light text-tan/90">
+            Alta &amp; Snowbird&ensp;·&ensp;March 9–12, 2026
+          </p>
+          <p className="mt-[16px] text-[16px] md:text-[24px] leading-[22px] md:leading-[32px] font-light text-tan/80">
+            Four days of skiing, networking, and founder community at the Alta
+            Peruvian Lodge.
+          </p>
+          <div className="mt-[32px] flex flex-wrap gap-[16px]">
+            <a href="#agenda" className="resolute-btn">
+              View Agenda
+            </a>
+            <a href="#attendees" className="resolute-btn-outlined !border-tan !text-tan hover:!bg-tan/20">
+              See Attendees
+            </a>
+          </div>
         </div>
       </div>
 

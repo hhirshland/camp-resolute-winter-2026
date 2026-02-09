@@ -66,55 +66,47 @@ a {
   vector-effect: non-scaling-stroke;
 }
 
-/* Button styles matching resolute.vc */
-.resolute-btn {
-  display: inline-block;
+/* Shared button base */
+.resolute-btn,
+.resolute-btn-outlined {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 600;
-  border-radius: var(--button-border-radius);
-  background: var(--dark-blue);
-  color: var(--tan);
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
   padding: 14px 20px;
-  text-align: left;
+  border: 2px solid transparent;
+  border-radius: var(--button-border-radius);
   transition: all 0.1s ease-out;
-  border: 4px solid var(--tan);
   cursor: pointer;
 }
 
 @media (min-width: 768px) {
-  .resolute-btn {
+  .resolute-btn,
+  .resolute-btn-outlined {
     font-size: 16px;
-    line-height: 16px;
     padding: 16px 24px;
   }
+}
+
+/* Primary button colors */
+.resolute-btn {
+  background: var(--dark-blue);
+  color: var(--tan);
+  border-color: var(--dark-blue);
 }
 
 .resolute-btn:hover {
   background: var(--red);
+  border-color: var(--red);
 }
 
-/* Outlined button variant */
+/* Outlined button colors */
 .resolute-btn-outlined {
-  display: inline-block;
-  font-weight: 600;
-  border-radius: var(--button-border-radius);
   background: transparent;
   color: var(--red);
-  font-size: 14px;
-  line-height: 14px;
-  padding: 14px 20px;
-  border: 2px solid var(--red);
-  transition: all 0.1s ease-out;
-  cursor: pointer;
-}
-
-@media (min-width: 768px) {
-  .resolute-btn-outlined {
-    font-size: 16px;
-    line-height: 16px;
-    padding: 16px 24px;
-  }
+  border-color: var(--red);
 }
 
 .resolute-btn-outlined:hover {
