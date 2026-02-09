@@ -1,26 +1,148 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --dark-blue: #002038;
+  --red: #EF4423;
+  --tan: #ECE9E1;
+  --max-width: 1440px;
+  --border-radius: 24px;
+  --button-border-radius: 48px;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-dark-blue: var(--dark-blue);
+  --color-red: var(--red);
+  --color-tan: var(--tan);
+  --font-chivo: var(--font-chivo-var), ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  background: var(--dark-blue);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--tan);
+  color: var(--dark-blue);
+  font-family: var(--font-chivo);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography matching resolute.vc */
+h2 {
+  color: var(--red);
+  font-weight: 700;
+}
+
+h3 {
+  color: var(--red);
+  font-weight: 700;
+}
+
+h4 {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+p {
+  font-weight: 300;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* Red divider line matching resolute.vc */
+.resolute-divider {
+  width: 100%;
+  position: relative;
+  left: -1px;
+}
+
+.resolute-divider svg path {
+  stroke: var(--red);
+  stroke-width: 4;
+  vector-effect: non-scaling-stroke;
+}
+
+/* Button styles matching resolute.vc */
+.resolute-btn {
+  display: inline-block;
+  font-weight: 600;
+  border-radius: var(--button-border-radius);
+  background: var(--dark-blue);
+  color: var(--tan);
+  font-size: 14px;
+  line-height: 14px;
+  padding: 14px 20px;
+  text-align: left;
+  transition: all 0.1s ease-out;
+  border: 4px solid var(--tan);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .resolute-btn {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 16px 24px;
+  }
+}
+
+.resolute-btn:hover {
+  background: var(--red);
+}
+
+/* Outlined button variant */
+.resolute-btn-outlined {
+  display: inline-block;
+  font-weight: 600;
+  border-radius: var(--button-border-radius);
+  background: transparent;
+  color: var(--red);
+  font-size: 14px;
+  line-height: 14px;
+  padding: 14px 20px;
+  border: 2px solid var(--red);
+  transition: all 0.1s ease-out;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .resolute-btn-outlined {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 16px 24px;
+  }
+}
+
+.resolute-btn-outlined:hover {
+  background: var(--dark-blue);
+  border-color: var(--dark-blue);
+  color: var(--tan);
+}
+
+/* Card styling */
+.resolute-card {
+  background: var(--tan);
+  border-radius: var(--border-radius);
+  outline: 4px solid var(--tan);
+  position: relative;
+}
+
+/* Link hover matching resolute.vc */
+.resolute-link {
+  color: var(--red);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--red);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+  transition: color 0.1s ease;
+}
+
+.resolute-link:hover {
+  color: var(--dark-blue);
+  text-decoration-color: var(--dark-blue);
 }
