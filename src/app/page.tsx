@@ -320,9 +320,11 @@ export default function Home() {
           <p className="mt-[16px] text-[16px] md:text-[24px] leading-[22px] md:leading-[32px] font-light text-tan/90">
             Alta &amp; Snowbird&ensp;·&ensp;March 9–12, 2026
           </p>
-          <p className="mt-[16px] text-[16px] md:text-[24px] leading-[22px] md:leading-[32px] font-light text-tan/80">
-            Four days of skiing, networking, and founder community at the Alta
-            Peruvian Lodge.
+          <p className="mt-[16px] text-[24px] md:text-[36px] xl:text-[48px] leading-[30px] md:leading-[42px] xl:leading-[56px] font-semibold text-tan">
+            Powder. People. Perspective.
+          </p>
+          <p className="mt-[12px] text-[14px] md:text-[20px] leading-[20px] md:leading-[28px] font-light text-tan/80">
+            Two days on the mountain, three nights with fellow founders at Alta Peruvian Lodge
           </p>
           <div className="mt-[32px] flex flex-wrap gap-[16px]">
             <a href="#agenda" className="resolute-btn">
@@ -568,7 +570,7 @@ export default function Home() {
             title="Snowboard Rentals"
             description="Snowboarders: Get rentals at Snowbird (Christy Sports, Snowbird Center, or Cliff Sports). Advance reservation gets 20% discount."
             cta="Snowbird Rentals"
-            ctaHref="https://pass.snowbird.com/s/winter-rentals"
+            ctaHref="https://pass.snowbird.com/l/rentals/p/rental-demo-equipment"
           />
         </div>
       </section>
