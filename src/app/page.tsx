@@ -65,7 +65,7 @@ const AGENDA = [
         time: "3:00 PM",
         activity: "Hotel Check-in available",
         location: "Peruvian",
-        note: "Check-in begins at 3pm but showers and luggage holding is available earlier",
+        note: "Check-in begins at 3:00 PM but showers and luggage holding is available earlier",
       },
       { time: "6:00 PM", activity: "Meetup", location: "Peruvian Lobby", note: "" },
       {
@@ -89,19 +89,19 @@ const AGENDA = [
         time: "9:15 AM",
         activity: "Ski / Snowboard / Leisure",
         location: "Alta / Snowbird",
-        note: "Alta: Lifts start rolling at 9:15am / Snowbird: Lifts start rolling at 9a",
+        note: "Alta: Lifts start rolling at 9:15 AM / Snowbird: Lifts start rolling at 9:00 AM",
       },
       {
         time: "12:00 PM",
         activity: "Lunch (Optional and on own)",
         location: "Peruvian, Alta, or Snowbird",
-        note: "*The Peruvian includes Lunch buffet from 12p-1:30p or grab a group to eat at the mtn",
+        note: "*The Peruvian includes Lunch buffet from 12:00–1:30 PM or grab a group to eat at the mtn",
       },
       {
         time: "1:00–4:00 PM",
         activity: "Ski / Snowboard / Leisure",
         location: "Alta / Snowbird",
-        note: "Alta: Standard lifts close at 4:30p / Snowbird: Standard lifts close at 4p",
+        note: "Alta: Standard lifts close at 4:30 PM / Snowbird: Standard lifts close at 4:00 PM",
       },
       {
         time: "4:00–6:30 PM",
@@ -136,7 +136,7 @@ const AGENDA = [
         time: "9:15 AM",
         activity: "Ski / Snowboard / Leisure",
         location: "Alta / Snowbird",
-        note: "Alta: Lifts start rolling at 9:15am / Snowbird: Lifts start rolling at 9a",
+        note: "Alta: Lifts start rolling at 9:15 AM / Snowbird: Lifts start rolling at 9:00 AM",
       },
       {
         time: "12:00 PM",
@@ -148,7 +148,7 @@ const AGENDA = [
         time: "1:00–4:00 PM",
         activity: "Ski / Snowboard / Leisure",
         location: "Alta / Snowbird",
-        note: "Alta: Standard lifts close at 4:30p / Snowbird: Standard lifts close at 4p",
+        note: "Alta: Standard lifts close at 4:30 PM / Snowbird: Standard lifts close at 4:00 PM",
       },
       {
         time: "4:00–6:30 PM",
@@ -174,10 +174,10 @@ const AGENDA = [
     day: "Day 4 — Thursday, March 12",
     items: [
       {
-        time: "7:30am",
+        time: "7:30 AM",
         activity: "Breakfast Opens",
         location: "Peruvian Dining Room",
-        note: "Available 7:30–9:00am",
+        note: "Available 7:30–9:00 AM",
       },
       {
         time: "",
@@ -467,7 +467,7 @@ export default function Home() {
           />
           <InfoRow
             title="UTA Ski Bus (Route 994)"
-            description="Budget option: $5 per ride from Historic Sandy Station. Runs every 30 minutes from 6am–7pm. Less convenient but very affordable!"
+            description="Budget option: $5 per ride from Historic Sandy Station. Runs every 30 minutes from 6:00 AM–7:00 PM. Less convenient but very affordable!"
             cta="View Schedule"
             ctaHref="https://www.rideuta.com/Rider-Tools/Schedules-and-Maps/994-Historic-Sandy-Station-to-Snowbird-Alta"
           />
