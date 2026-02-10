@@ -213,7 +213,12 @@ const ATTENDEES: {
     phone: "859-553-1491",
     email: "logan@forecastr.co",
   },
-  { name: "Dan Burkhart", company: "Vixel", email: "dan@vixel.com" },
+  {
+    name: "Dan Burkhart",
+    company: "Vixel",
+    phone: "415-218-3488",
+    email: "dan@vixel.com",
+  },
   {
     name: "Asaf Fadida",
     company: "Darwin",
@@ -226,9 +231,14 @@ const ATTENDEES: {
     phone: "+972 50-422-1100",
     email: "ben@kimba.ai",
   },
-  { name: "Arik Gefen", company: "Nebo Health", email: "arik@nebo.health" },
   {
-    name: "Nadav Grossinger",
+    name: "Arik Gefen",
+    company: "Nebo Health",
+    phone: "+972 54-800-6099",
+    email: "arik@nebo.health",
+  },
+  {
+    name: "Nadaz Grossinger",
     company: "Elio",
     phone: "650-862-5142",
     email: "ngrossinger@eliolabs.com",
@@ -239,15 +249,30 @@ const ATTENDEES: {
     phone: "734-678-3170",
     email: "anurag@tembo.health",
   },
-  { name: "Erik Gustavson", company: "SGNL" },
-  { name: "Ari Haber", company: "Fenwick", email: "ahaber@fenwick.com" },
   {
-    name: "Thomas Halgas",
+    name: "Erik Gustavson",
+    company: "SGNL",
+    phone: "703-216-3881",
+    email: "erik@sgnl.ai",
+  },
+  {
+    name: "Ari Haber",
+    company: "Fenwick",
+    phone: "510-610-8884",
+    email: "ahaber@fenwick.com",
+  },
+  {
+    name: "Tomas Halgas",
     company: "Sutro",
     phone: "+44 7508 297792",
     email: "tom@sutro.xyz",
   },
-  { name: "Cynthia Hess", company: "Fenwick", email: "CHess@fenwick.com" },
+  {
+    name: "Cynthia Hess",
+    company: "Fenwick",
+    phone: "415-730-2121",
+    email: "CHess@fenwick.com",
+  },
   {
     name: "Michael Hirshland",
     company: "Resolute",
@@ -528,8 +553,9 @@ export default function Home() {
           <p className="mt-[12px] text-[16px] md:text-[18px] leading-[22px] md:leading-[26px] font-light text-tan/80">
             You can ski directly from Alta to Snowbird (and back) provided that
             both sides have operating lifts. From Alta, take Sugarloaf lift to
-            the top where the interconnect gates are located. (Combined pass
-            required!)
+            the top where the interconnect gates are located. You must buy a
+            combined pass in person at Alta/Snowbird or through your Ikon app
+            for Ikon pass holders.
           </p>
         </div>
         
