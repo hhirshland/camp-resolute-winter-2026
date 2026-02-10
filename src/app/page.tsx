@@ -499,6 +499,29 @@ export default function Home() {
             ctaHref="https://www.rideuta.com/Rider-Tools/Schedules-and-Maps/994-Historic-Sandy-Station-to-Snowbird-Alta"
           />
         </div>
+
+        {/* Getting around Alta */}
+        <div className="mt-[48px] md:mt-[64px]">
+          <h2 className="text-[24px] md:text-[36px] xl:text-[56px] leading-[30px] md:leading-[40px] xl:leading-[64px] mb-[16px] md:mb-[24px]">
+            Getting Around Alta
+          </h2>
+          <div>
+            <InfoRow
+              title="Alta Peruvian Shuttle"
+              description="Free shuttle service between the lodge and Alta lifts."
+            />
+            <InfoRow
+              title="Alta Resort Shuttle"
+              description="Free shuttle running between Alta and Snowbird throughout the day."
+              cta="Call 801-301-0122"
+              ctaHref="tel:801-301-0122"
+            />
+            <InfoRow
+              title="Skiing from Alta to Snowbird"
+              description="You can ski directly from Alta to Snowbird (and back) provided that both sides have operating lifts. From Alta, take Sugarloaf lift to the top where the interconnect gates are located. You must buy a combined pass in person at Alta/Snowbird or through your Ikon app for Ikon pass holders."
+            />
+          </div>
+        </div>
       </section>
 
       <RedDivider />

@@ -38,7 +38,7 @@ export default function RootLayout({
               {[
                 { href: "#agenda", label: "Agenda" },
                 { href: "#attendees", label: "Attendees" },
-                { href: "#transportation", label: "Travel" },
+                { href: "#transportation", label: "Transportation" },
                 { href: "#tickets", label: "Tickets" },
                 { href: "#equipment", label: "Gear" },
                 { href: "#tips", label: "Tips" },
