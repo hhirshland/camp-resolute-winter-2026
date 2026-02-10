@@ -61,11 +61,17 @@ const AGENDA = [
     day: "Day 1 — Monday, March 9",
     items: [
       { time: "", activity: "Arrivals throughout day", location: "", note: "" },
-      { time: "6:00 PM", activity: "Meetup", location: "Lobby", note: "" },
+      {
+        time: "3:00 PM",
+        activity: "Hotel Check-in available",
+        location: "Peruvian",
+        note: "Check-in begins at 3pm but showers and luggage holding is available earlier",
+      },
+      { time: "6:00 PM", activity: "Meetup", location: "Peruvian Lobby", note: "" },
       {
         time: "6:30 PM",
         activity: "Group Dinner",
-        location: "Dining Room",
+        location: "Peruvian Dining Room",
         note: "Seating time is 6:30 PM sharp",
       },
     ],
@@ -76,31 +82,37 @@ const AGENDA = [
       {
         time: "7:30 AM",
         activity: "Breakfast Opens",
-        location: "",
+        location: "Peruvian Dining Room",
         note: "Available 7:30–9:00 AM",
       },
       {
-        time: "9:00 AM",
-        activity: "Ski Alta / Snowbird",
-        location: "",
-        note: "",
+        time: "9:15 AM",
+        activity: "Ski / Snowboard / Leisure",
+        location: "Alta / Snowbird",
+        note: "Alta: Lifts start rolling at 9:15am / Snowbird: Lifts start rolling at 9a",
       },
       {
-        time: "12:30 PM",
-        activity: "Lunch",
-        location: "",
-        note: "Included at Peruvian or grab a group to eat on the mountain",
+        time: "12:00 PM",
+        activity: "Lunch (Optional and on own)",
+        location: "Peruvian, Alta, or Snowbird",
+        note: "*The Peruvian includes Lunch buffet from 12p-1:30p or grab a group to eat at the mtn",
+      },
+      {
+        time: "1:00–4:00 PM",
+        activity: "Ski / Snowboard / Leisure",
+        location: "Alta / Snowbird",
+        note: "Alta: Standard lifts close at 4:30p / Snowbird: Standard lifts close at 4p",
       },
       {
         time: "4:00–6:30 PM",
         activity: "Apres Ski Hangout",
-        location: "Hot Tub / Alf Engen Room",
+        location: "Peruvian Hot Tub / Alf Engen Room",
         note: "Optional",
       },
       {
         time: "6:30 PM",
         activity: "Group Dinner",
-        location: "Dining Room",
+        location: "Peruvian Dining Room",
         note: "Seating time is 6:30 PM sharp",
       },
       {
@@ -117,14 +129,14 @@ const AGENDA = [
       {
         time: "7:30 AM",
         activity: "Breakfast Opens",
-        location: "",
+        location: "Peruvian Dining Room",
         note: "Available 7:30–9:00 AM",
       },
       {
-        time: "9:00 AM",
-        activity: "Ski Alta / Snowbird",
-        location: "",
-        note: "",
+        time: "9:15 AM",
+        activity: "Ski / Snowboard / Leisure",
+        location: "Alta / Snowbird",
+        note: "Alta: Lifts start rolling at 9:15am / Snowbird: Lifts start rolling at 9a",
       },
       {
         time: "12:00 PM",
@@ -133,15 +145,21 @@ const AGENDA = [
         note: "Optional — RSVP required",
       },
       {
+        time: "1:00–4:00 PM",
+        activity: "Ski / Snowboard / Leisure",
+        location: "Alta / Snowbird",
+        note: "Alta: Standard lifts close at 4:30p / Snowbird: Standard lifts close at 4p",
+      },
+      {
         time: "4:00–6:30 PM",
         activity: "Apres Ski Hangout",
-        location: "Hot Tub / Alf Engen Room",
+        location: "Peruvian Hot Tub / Alf Engen Room",
         note: "Optional",
       },
       {
         time: "6:30 PM",
         activity: "Group Dinner",
-        location: "Dining Room",
+        location: "Peruvian Dining Room",
         note: "Seating time is 6:30 PM sharp",
       },
       {
@@ -156,10 +174,16 @@ const AGENDA = [
     day: "Day 4 — Thursday, March 12",
     items: [
       {
-        time: "7:30 AM",
-        activity: "Breakfast Opens / Departures all day",
+        time: "7:30am",
+        activity: "Breakfast Opens",
+        location: "Peruvian Dining Room",
+        note: "Available 7:30–9:00am",
+      },
+      {
+        time: "",
+        activity: "Departures all day",
         location: "",
-        note: "Available 7:30–9:00 AM",
+        note: "",
       },
     ],
   },
@@ -439,7 +463,7 @@ export default function Home() {
             title="Alta/Snowbird Shuttle"
             description="RECOMMENDED: Shared (or private) shuttle service — convenient and reliable."
             cta="Book Online"
-            ctaHref="https://www.alta.com/getting-here"
+            ctaHref="https://www.altasnowbirdshuttle.com/reservation.php?a=MQ=="
           />
           <InfoRow
             title="UTA Ski Bus (Route 994)"
@@ -467,13 +491,13 @@ export default function Home() {
         <div>
           <InfoRow
             title="Alta Ski Area"
-            description="Purchase lift tickets in advance for best prices (up to 15% savings)."
+            description="Alta is on the Ikon pass; if you don't have one, you can purchase single or multi-day lift tickets in advance for best prices (up to 15% savings)."
             cta="Buy Alta Tickets"
             ctaHref="https://www.alta.com/tickets-and-passes"
           />
           <InfoRow
             title="Snowbird Resort"
-            description="Snowbird lift tickets — advance purchase saves 15% (also part of Ikon pass). They also offer Fast Tracks to skip the lift line."
+            description="Snowbird is also an Ikon mtn; if you don't have that pass, advance purchase of single or multi-day lift tickets saves 15%. They also offer 'Fast Tracks' to skip the lift line."
             cta="Buy Snowbird Tickets"
             ctaHref="https://www.snowbird.com/tickets-passes/tickets/"
           />
@@ -528,23 +552,23 @@ export default function Home() {
             title="Ship Your Skis"
             description="Recommended by the Peruvian: Ship your skis/gear directly to the lodge — they arrive before you do!"
             cta="ShipSkis.com"
-            ctaHref="https://www.shipskis.com/"
+            ctaHref="https://www.shipskis.com/alta-peruvian-lodge?utm_source=altaperuvianhotel&utm_medium=referral&utm_campaign=website&utm_content=website"
           />
           <InfoRow
             title="Ski Rentals at Peruvian"
-            description="The Peruvian has on-site high-end ski rentals. No advance reservation typically needed."
+            description="The Peruvian has on-site ski rentals. No advance reservation typically needed."
           />
           <InfoRow
             title="Alta Ski Shop Rentals"
             description="Alta has full-service ski shops at Albion and Wildcat base areas. Online reservations available (pickup day-of only). Advance booking recommended for weekends."
             cta="Reserve Online"
-            ctaHref="https://www.alta.com/rentals-and-retail"
+            ctaHref="https://shop.alta.com/rentals"
           />
           <InfoRow
             title="Snowboard Rentals"
             description="Snowboarders: Get rentals at Snowbird (Christy Sports, Snowbird Center, or Cliff Sports). Advance reservation gets 20% discount."
             cta="Snowbird Rentals"
-            ctaHref="https://pass.snowbird.com/s/rentals"
+            ctaHref="https://pass.snowbird.com/s/winter-rentals"
           />
         </div>
       </section>
@@ -607,9 +631,9 @@ export default function Home() {
             Ski Between Mountains
           </h4>
           <p className="mt-[12px] text-[16px] md:text-[18px] leading-[22px] md:leading-[26px] font-light text-tan/80">
-            From Alta, take Sugarloaf lift to the top and the interconnect gates
-            are up there. Reverse route to return to Alta. (Combined pass
-            required — see above!)
+            From Alta, take Sugarloaf lift to the top, then ski to Germania
+            Pass. From there, you can access Snowbird&apos;s Mineral Basin. Reverse
+            route to return to Alta. (Combined pass required — see above!)
           </p>
         </div>
       </section>
