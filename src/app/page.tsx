@@ -526,10 +526,10 @@ export default function Home() {
             Combined Pass — Ski Between Both Mountains
           </h4>
           <p className="mt-[12px] text-[16px] md:text-[18px] leading-[22px] md:leading-[26px] font-light text-tan/80">
-            You can ski directly from Alta to Snowbird (and back) via the
-            connecting lifts! Purchase the combined pass at Alta (you cannot
-            purchase this online). Note: Both sides must have lifts operating for
-            the connection to work.
+            You can ski directly from Alta to Snowbird (and back) provided that
+            both sides have operating lifts. From Alta, take Sugarloaf lift to
+            the top where the interconnect gates are located. (Combined pass
+            required!)
           </p>
         </div>
         
