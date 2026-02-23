@@ -142,7 +142,19 @@ const AGENDA = [
         time: "12:00 PM",
         activity: "Mid-Mountain Lunch",
         location: "Collins Grill",
-        note: "Optional — RSVP required",
+        note: (
+          <>
+            Optional —{" "}
+            <a
+              href="https://docs.google.com/spreadsheets/d/1MfHnnOqdma2TcqoTX78GA-5PHF14vEZZhkbavidKo5w/edit?gid=0#gid=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resolute-link not-italic"
+            >
+              RSVP required
+            </a>
+          </>
+        ),
       },
       {
         time: "1:00–4:00 PM",
