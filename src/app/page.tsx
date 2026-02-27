@@ -133,6 +133,24 @@ const AGENDA = [
         note: "Available 7:30–9:00 AM",
       },
       {
+        time: "8:00 AM",
+        activity: "Fresh Tracks Ski w/ Guide",
+        location: "Alta",
+        note: (
+          <>
+            Optional — Fresh Tracks allows you to ski with guides, starting 1 hour before the lifts open to the public to get fresh snow, and then ski with guides the rest of the morning. For intermediate and advanced skiers.{" "}
+            <a
+              href="https://docs.google.com/spreadsheets/d/1MfHnnOqdma2TcqoTX78GA-5PHF14vEZZhkbavidKo5w/edit?gid=0#gid=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resolute-link not-italic"
+            >
+              RSVP needed
+            </a>
+          </>
+        ),
+      },
+      {
         time: "9:15 AM",
         activity: "Ski / Snowboard / Leisure",
         location: "Alta / Snowbird",
