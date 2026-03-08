@@ -134,11 +134,29 @@ const AGENDA = [
       },
       {
         time: "8:00 AM",
-        activity: "Fresh Tracks Ski w/ Guide",
+        activity: "Fresh Tracks Ski Experience at Alta",
         location: "Alta",
         note: (
           <>
-            Optional — Fresh Tracks allows you to ski with guides, starting 1 hour before the lifts open to the public to get fresh snow, and then ski with guides the rest of the morning. For intermediate and advanced skiers.{" "}
+            Optional for those who RSVPd — Meet in the Peruvian lobby at 8:00 AM to head over together, or meet at the Wildcat chair by 8:25 AM. Fresh Tracks allows you to ski with guides, starting 1 hour before the lifts open to the public to get fresh snow, and then ski with guides the rest of the morning. For intermediate and advanced skiers.{" "}
+            <a
+              href="https://docs.google.com/spreadsheets/d/1MfHnnOqdma2TcqoTX78GA-5PHF14vEZZhkbavidKo5w/edit?gid=0#gid=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resolute-link not-italic"
+            >
+              RSVP needed
+            </a>
+          </>
+        ),
+      },
+      {
+        time: "8:00 AM",
+        activity: "Advanced Snowboard Guide Experience at Snowbird",
+        location: "Snowbird",
+        note: (
+          <>
+            Optional for those who RSVPd — Meet at the Peruvian front desk at 8:00 AM to request the maintenance shuttle to Snowbird. The experience runs 9:00 AM–12:00 PM but meets at 8:50 AM at Snowbird.{" "}
             <a
               href="https://docs.google.com/spreadsheets/d/1MfHnnOqdma2TcqoTX78GA-5PHF14vEZZhkbavidKo5w/edit?gid=0#gid=0"
               target="_blank"
@@ -158,7 +176,7 @@ const AGENDA = [
       },
       {
         time: "12:00 PM",
-        activity: "Mid-Mountain Lunch",
+        activity: "Mid-Mountain Lunch (Skiers)",
         location: "Collins Grill",
         note: (
           <>
@@ -173,6 +191,12 @@ const AGENDA = [
             </a>
           </>
         ),
+      },
+      {
+        time: "12:00 PM",
+        activity: "Group Lunch (Snowboarders)",
+        location: "SeventyOne at Snowbird",
+        note: "No reservation needed — snowboarders meet up for a group lunch at SeventyOne at Snowbird",
       },
       {
         time: "1:00–4:00 PM",
@@ -597,6 +621,15 @@ export default function Home() {
             The Alta Peruvian Lodge offers a free shuttle to Snowbird for
             snowboarders. Free Alta area shuttles also run throughout the day
             between Alta and Snowbird.
+          </p>
+          <p className="mt-[12px] text-[16px] md:text-[18px] leading-[22px] md:leading-[26px] font-light text-tan/70">
+            <strong className="text-tan font-semibold">
+              Returning from Snowbird with a dual pass:
+            </strong>{" "}
+            Snowboarders with a combined Alta/Snowbird pass ARE allowed to
+            snowboard back from Snowbird to the Peruvian Lodge on a specific
+            Alta trail — but you cannot ride any Alta lifts. Ask the Peruvian
+            front desk for instructions and directions if needed.
           </p>
         </div>
         <div className="mt-[32px] rounded-[var(--border-radius)] bg-dark-blue text-tan p-[24px] md:p-[32px]">
